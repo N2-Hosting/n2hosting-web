@@ -7,7 +7,7 @@ export default function FreeSetupSection() {
             <span className="color:pink-50">Free</span> Website Setup
           </h2>
           <p className="f:16 f:24@md f:light lh:1.5">
-            Don't have time to setup your website ?
+           {'Don\'t have time to setup your website ?'}
             <span className="block@md">
               we can help you create your dream website for FREE!.
             </span>
