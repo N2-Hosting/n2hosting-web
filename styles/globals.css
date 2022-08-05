@@ -1,0 +1,5 @@
+@import '@master/normal.css';
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+}

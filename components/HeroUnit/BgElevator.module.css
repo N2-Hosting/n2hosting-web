@@ -1,0 +1,30 @@
+.container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.lines {
+  opacity: 0.05;
+}
+
+.line {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #9832e4;
+}
+
+.lights {
+  opacity: 0.9;
+}
+
+.light {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #7018b2;
+}
