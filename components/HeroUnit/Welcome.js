@@ -14,8 +14,9 @@ export default function HeroUnitWelcome() {
           <span className="color:yellow-80">Performance.</span>
         </h1>
         <p className="f:18 f:light f:20@md lh:1.5">
-          The Affordable web hosting in the <span className='f:bold'>Philippines</span> with
-          excellent speeds and security.
+          The Affordable web hosting in the{' '}
+          <span className="f:bold">Philippines</span> with excellent speeds and
+          security.
         </p>
         <BgElevator />
       </section>

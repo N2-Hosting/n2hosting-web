@@ -7,7 +7,11 @@ export default function PrimaryFooter() {
             Copyright © 2022 N2 Hosting. All rights reserved.
           </p>
           <div className="grid-cols:3 gap:15">
-            <a href="https://www.facebook.com/n2hostingph" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/n2hostingph"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w:24 h:24 fill:fade-80 fill:white:hover"
@@ -15,7 +19,11 @@ export default function PrimaryFooter() {
                 <path d="M11.666 2.005c-5.046.165-9.292 4.246-9.641 9.283-.369 5.329 3.442 9.832 8.481 10.589V14.65H8.892a1.314 1.314 0 1 1 0-2.628h1.613v-1.749c0-2.896 1.411-4.167 3.818-4.167.357 0 .662.008.921.021a1.193 1.193 0 0 1 1.129 1.198 1.2 1.2 0 0 1-1.2 1.2h-.442c-1.022 0-1.379.969-1.379 2.061v1.437h1.87a.964.964 0 0 1 .953 1.111l-.108.701a.964.964 0 0 1-.953.817h-1.762v7.247C18.235 21.236 22 17.062 22 12c0-5.634-4.659-10.179-10.334-9.995z" />
               </svg>
             </a>
-            <a href="https://github.com/N2-Hosting" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/N2-Hosting"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w:24 h:24 fill:fade-80 fill:white:hover"
@@ -23,7 +31,11 @@ export default function PrimaryFooter() {
                 <path d="M10.9 2.1c-4.6.5-8.3 4.2-8.8 8.7-.5 4.7 2.2 8.9 6.3 10.5.3.1.6-.1.6-.5v-1.6s-.4.1-.9.1c-1.4 0-2-1.2-2.1-1.9-.1-.4-.3-.7-.6-1-.3-.1-.4-.1-.4-.2 0-.2.3-.2.4-.2.6 0 1.1.7 1.3 1 .5.8 1.1 1 1.4 1 .4 0 .7-.1.9-.2.1-.7.4-1.4 1-1.8-2.3-.5-4-1.8-4-4 0-1.1.5-2.2 1.2-3-.1-.2-.2-.7-.2-1.4 0-.4 0-1 .3-1.6 0 0 1.4 0 2.8 1.3.5-.2 1.2-.3 1.9-.3s1.4.1 2 .3C15.3 6 16.8 6 16.8 6c.2.6.2 1.2.2 1.6 0 .8-.1 1.2-.2 1.4.7.8 1.2 1.8 1.2 3 0 2.2-1.7 3.5-4 4 .6.5 1 1.4 1 2.3v2.6c0 .3.3.6.7.5 3.7-1.5 6.3-5.1 6.3-9.3 0-6-5.1-10.7-11.1-10z" />
               </svg>
             </a>
-            <a href="https://twitter.com/n2hostingph" target="_blank" rel="noreferrer">
+            <a
+              href="https://twitter.com/n2hostingph"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w:24 h:24 fill:fade-80 fill:white:hover"

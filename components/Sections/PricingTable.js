@@ -2,7 +2,10 @@ import PricingListItem from './PricingListItem';
 
 export default function PricingTable() {
   return (
-    <section id="pricing" className="px:15 py:30 py:80@md bg:fade-12 color:white">
+    <section
+      id="pricing"
+      className="px:15 py:30 py:80@md bg:fade-12 color:white"
+    >
       <div className="t:center mb:60 mb:120@md">
         <h2 className="f:24 f:48@md mb:30">
           <span className="color:yellow-80">Pricing</span> Plans.
@@ -10,13 +13,21 @@ export default function PricingTable() {
         <p className="f:16 f:24@md f:light">
           Pick any plan that suites your budget.
         </p>
-        <p className="f:16 f:24@md f:light mt:20">All plans are <span className='f:18 f:24@md f:bold color:red-60'>60%</span> off for Today.</p>
+        <p className="f:16 f:24@md f:light mt:20">
+          All plans are{' '}
+          <span className="f:18 f:24@md f:bold color:red-60">60%</span> off for
+          Today.
+        </p>
       </div>
       <div className="max-w:lg mx:auto">
         <div className="grid-cols:1 grid-cols:3@md gap:40">
           <div className="p:30">
-            <p className="f:30 f:48@md f:semibold">₱92<span className='f:24'>/mo</span></p>
-            <p className="f:14 mt:20 color:fade-60">Renews next month for ₱230.00/mo</p>
+            <p className="f:30 f:48@md f:semibold">
+              ₱92<span className="f:24">/mo</span>
+            </p>
+            <p className="f:14 mt:20 color:fade-60">
+              Renews next month for ₱230.00/mo
+            </p>
             <h3 className="mt:30">Starter</h3>
             <p className="lh:1.5 mt:10 f:14">
               Good for small businesses or school projects.
@@ -34,14 +45,17 @@ export default function PricingTable() {
               <PricingListItem description="50GB Storage" />
               <PricingListItem description="FREE SSL" />
               <PricingListItem description="Free 1-click Software install" />
-              <PricingListItem description="Developer Friendly" />
               <PricingListItem description="Asia Optimized Bandwidth" />
               <PricingListItem description="Free Setup" />
             </ul>
           </div>
           <div className="bg:blue-50 r:24 p:30">
-            <p className="f:30 f:48@md f:semibold">₱139<span className='f:24'>/mo</span></p>
-            <p className="f:14 mt:30 color:fade-88">Renews next month for ₱349.00/mo</p>
+            <p className="f:30 f:48@md f:semibold">
+              ₱139<span className="f:24">/mo</span>
+            </p>
+            <p className="f:14 mt:30 color:fade-88">
+              Renews next month for ₱349.00/mo
+            </p>
             <h3 className="mt:20">Professional</h3>
             <p className="lh:1.5 mt:10 f:14">
               Good for medium size businesses and just getting started
@@ -66,17 +80,17 @@ export default function PricingTable() {
                 iconColor="white"
                 description="Free 1-click Software install"
               />
-              <PricingListItem
-                iconColor="white"
-                description="Developer Friendly"
-              />
               <PricingListItem description="Asia Optimized Bandwidth" />
               <PricingListItem description="Free Setup" />
             </ul>
           </div>
           <div className="p:30">
-            <p className="f:30 f:48@md f:semibold">₱239<span className='f:24'>/mo</span></p>
-            <p className="f:14 mt:20 color:fade-60">Renews next month for ₱599.00/mo</p>
+            <p className="f:30 f:48@md f:semibold">
+              ₱239<span className="f:24">/mo</span>
+            </p>
+            <p className="f:14 mt:20 color:fade-60">
+              Renews next month for ₱599.00/mo
+            </p>
             <h3 className="mt:30">Business</h3>
             <p className="lh:1.5 mt:10 f:14">
               Unmetered resources, good for big size business.
@@ -95,7 +109,6 @@ export default function PricingTable() {
               <PricingListItem description="FREE SSL" />
               <PricingListItem description="Daily Backups" />
               <PricingListItem description="Free 1-click Software install" />
-              <PricingListItem description="Developer Friendly" />
               <PricingListItem description="Asia Optimized Bandwidth" />
               <PricingListItem description="Free Setup" />
             </ul>
