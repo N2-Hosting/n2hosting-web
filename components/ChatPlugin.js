@@ -11,7 +11,7 @@ export default function ChatPlugin() {
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
-        version: 'v14.0',
+        version: 'v14.0'
       });
     };
 

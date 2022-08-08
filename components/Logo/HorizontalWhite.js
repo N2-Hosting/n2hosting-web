@@ -5,11 +5,7 @@ export default function HorizontalWhiteLogo() {
     <>
       <picture>
         <source srcSet="/images/logo.png" type="image/png" />
-        <img
-          src="/images/logo.png"
-          alt="Logo"
-          className="w:200 w:300@md"
-        />
+        <img src="/images/logo.png" alt="Logo" className="w:200 w:300@md" />
       </picture>
     </>
   );

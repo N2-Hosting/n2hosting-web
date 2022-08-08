@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import Script from 'next/script';
-import { useCallback } from 'react'
+import { useCallback } from 'react';
 import styles from './BgElevator.module.css';
 
 function animateWithRandomNumber(myClass, from, to) {
@@ -12,7 +12,7 @@ function animateWithRandomNumber(myClass, from, to) {
       y: to,
       onComplete: animateWithRandomNumber,
       onCompleteParams: [myClass, from, to],
-      ease: Linear.easeNone,
+      ease: Linear.easeNone
     }
   );
 }
@@ -21,37 +21,37 @@ export default function BgElevator() {
   const svgRef = useRef();
 
   useEffect(() => {
-   function main() {
-    const itemsDown = [
-      '.light4',
-      '.light5',
-      '.light6',
-      '.light7',
-      '.light8',
-      '.light11',
-      '.light12',
-      '.light13',
-      '.light14',
-      '.light15',
-      '.light16',
-    ].forEach((e) => animateWithRandomNumber(e, -1080, 1080));
-    const itemsUp = [
-      '.light1',
-      '.light2',
-      '.light3',
-      '.light9',
-      '.light10',
-      '.light17',
-    ].forEach((e) => animateWithRandomNumber(e, 1080, -1080));
-   }
+    function main() {
+      const itemsDown = [
+        '.light4',
+        '.light5',
+        '.light6',
+        '.light7',
+        '.light8',
+        '.light11',
+        '.light12',
+        '.light13',
+        '.light14',
+        '.light15',
+        '.light16'
+      ].forEach((e) => animateWithRandomNumber(e, -1080, 1080));
+      const itemsUp = [
+        '.light1',
+        '.light2',
+        '.light3',
+        '.light9',
+        '.light10',
+        '.light17'
+      ].forEach((e) => animateWithRandomNumber(e, 1080, -1080));
+    }
 
     const waitForTweenLite = setInterval(() => {
       if (typeof TweenLite === 'function') {
-        main()
-        clearInterval(waitForTweenLite)
+        main();
+        clearInterval(waitForTweenLite);
       }
-    }, 200) // in milliseconds
-    return () => clearInterval(waitForTweenLite)
+    }, 200); // in milliseconds
+    return () => clearInterval(waitForTweenLite);
   });
 
   return (
@@ -73,23 +73,108 @@ export default function BgElevator() {
           ref={svgRef}
         >
           <g className={styles.lines}>
-            <rect className={styles.line} x="1253.6" width="4.5" height="1080"></rect>
-            <rect className={styles.line} x="873.3" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="1100" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="1547.1" width="4.5" height="1080"></rect>
-            <rect className={styles.line} x="615" width="4.5" height="1080"></rect>
-            <rect className={styles.line} x="684.6" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="1369.4" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="1310.2" width="0.9" height="1080"></rect>
-            <rect className={styles.line} x="1233.4" width="0.9" height="1080"></rect>
-            <rect className={styles.line} x="124.2" width="0.9" height="1080"></rect>
-            <rect className={styles.line} x="1818.4" width="4.5" height="1080"></rect>
-            <rect className={styles.line} x="70.3" width="4.5" height="1080"></rect>
-            <rect className={styles.line} x="1618.6" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="455.9" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="328.7" width="1.8" height="1080"></rect>
-            <rect className={styles.line} x="300.8" width="4.6" height="1080"></rect>
-            <rect className={styles.line} x="1666.4" width="0.9" height="1080"></rect>
+            <rect
+              className={styles.line}
+              x="1253.6"
+              width="4.5"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="873.3"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1100"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1547.1"
+              width="4.5"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="615"
+              width="4.5"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="684.6"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1369.4"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1310.2"
+              width="0.9"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1233.4"
+              width="0.9"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="124.2"
+              width="0.9"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1818.4"
+              width="4.5"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="70.3"
+              width="4.5"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1618.6"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="455.9"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="328.7"
+              width="1.8"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="300.8"
+              width="4.6"
+              height="1080"
+            ></rect>
+            <rect
+              className={styles.line}
+              x="1666.4"
+              width="0.9"
+              height="1080"
+            ></rect>
           </g>
           <g className={styles.lights}>
             <path

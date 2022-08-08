@@ -12,30 +12,35 @@ export default function FAQSection() {
         <div className="bg:fade-8 p:30 r:15">
           <h3 className="mb:15 f:14 f:18@md">What is Web Hosting ?</h3>
           <p className="f:light f:14 f:16@md lh:1.5">
-            Web hosting is a service we provided that
-            sell or lease space on a server where you store the files that make
-            your website accessible on the internet. We offer the facilities required for
-            you (clients) to create and maintain a site and makes it accessible on the
-            World Wide Web.
+            Web hosting is a service we provided that sell or lease space on a
+            server where you store the files that make your website accessible
+            on the internet. We offer the facilities required for you (clients)
+            to create and maintain a site and makes it accessible on the World
+            Wide Web.
           </p>
         </div>
         <div className="bg:fade-8 p:30 r:15">
-          <h3 className="mb:15 f:14 f:18@md">What payment methods are accepted?</h3>
+          <h3 className="mb:15 f:14 f:18@md">
+            What payment methods are accepted?
+          </h3>
           <p className="f:light f:14 f:16@md lh:1.5">
             We accept Bank Transfer via Instapay, PayMaya, Coins and Gcash.
           </p>
         </div>
         <div className="bg:fade-8 p:30 r:15">
-          <h3 className="mb:15 f:14 f:18@md">Do you offer free website build?</h3>
+          <h3 className="mb:15 f:14 f:18@md">
+            Do you offer free website build?
+          </h3>
           <p className="f:light f:14 f:16@md lh:1.5">
-            We offer free website setup to all of our plans however we can only offer you a basic websites e.g. Blog, E-commerce.
+            We offer free website setup to all of our plans however we can only
+            offer you a basic websites e.g. Blog, E-commerce.
           </p>
         </div>
         <div className="bg:fade-8 p:30 r:15">
           <h3 className="mb:15 f:14 f:18@md">Do you offer free domain?</h3>
           <p className="f:light f:14 f:16@md lh:1.5">
-            We offer free domains for every new hosting plan purchase.
-            We provide free .com domain for a 1 year plan.
+            We offer free domains for every new hosting plan purchase. We
+            provide free .com domain for a 1 year plan.
           </p>
         </div>
       </div>
