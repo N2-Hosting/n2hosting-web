@@ -1,4 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { createRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import LoadingIcon from '../Icons/Loading';
 
@@ -11,12 +13,19 @@ const ContactUsSchema = Yup.object().shape({
 });
 
 export default function ContactUsForm({ onSubmit }) {
+  const recaptchaRef = createRef();
+
+  function onChange() {}
+
   return (
     <Formik
       initialValues={{ name: '', email: '', message: '' }}
       validationSchema={ContactUsSchema}
       onSubmit={(values, { setSubmitting }) => {
-        onSubmit(values, { setSubmitting });
+        const token = recaptchaRef.current.getValue();
+
+        setSubmitting(true);
+        onSubmit(values, { setSubmitting }, recaptchaRef);
       }}
     >
       {({ isSubmitting }) => (
@@ -53,6 +62,13 @@ export default function ContactUsForm({ onSubmit }) {
               placeholder="Your Message"
               className="bg:white p:15 appearance:none color:black r:6 w:full"
               rows="6"
+            />
+          </div>
+          <div>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              onChange={onChange}
             />
           </div>
           <div className="mt:15">

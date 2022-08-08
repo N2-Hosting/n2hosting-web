@@ -9,8 +9,9 @@ export default function ContactUsPage() {
   const [successMessage, setSuccessMessage] = useState('');
   const [errors, setErrors] = useState([]);
 
-  async function handleSendFormToServer(values) {
+  async function handleSendFormToServer(values, token) {
     setSuccessMessage('');
+    setIsSuccess(false);
     setErrors([]);
 
     try {
@@ -22,7 +23,8 @@ export default function ContactUsPage() {
         data: {
           ...values,
           ...{
-            ip_address: ip?.ipAddress
+            ip_address: ip?.ipAddress,
+            token
           }
         }
       };
@@ -50,7 +52,11 @@ export default function ContactUsPage() {
       const data = await response.json();
       setErrors(data?.error?.details?.errors);
     } catch (e) {
-      setSuccessMessage('Server Error! Please try again!.');
+      setErrors([
+        {
+          message: 'Server Error! Please try again!'
+        }
+      ]);
     }
   }
 
@@ -100,9 +106,22 @@ export default function ContactUsPage() {
           )}
 
           <ContactUsForm
-            onSubmit={(values, { setSubmitting }) => {
-              handleSendFormToServer(values);
+            onSubmit={(values, { setSubmitting }, recaptchaRef) => {
+              const token = recaptchaRef.current.getValue();
+
+              if (!token) {
+                setErrors([
+                  {
+                    message: 'Invalid captcha!'
+                  }
+                ]);
+                setSubmitting(false);
+                return;
+              }
+
+              handleSendFormToServer(values, token);
               setSubmitting(false);
+              recaptchaRef.current.reset();
             }}
           />
         </div>
