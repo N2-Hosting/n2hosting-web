@@ -33,7 +33,7 @@ export default function PricingTable() {
               Good for small businesses or school projects.
             </p>
             <a
-              href="#"
+              href="https://client.n2hosting.com/order.php?step=2&product=1&paymentTerm=1"
               className="mt:30 f:14 f:semibold block rounded t:center color:white p:12 b:2|solid|fade-30"
             >
               Buy Starter
@@ -62,7 +62,7 @@ export default function PricingTable() {
               professional.
             </p>
             <a
-              href="#"
+              href="https://client.n2hosting.com/order.php?step=2&product=2&paymentTerm=1"
               className="mt:30 f:14 f:semibold block bg:white rounded t:center color:fade-4 p:12 b:2|solid|white"
             >
               Buy Professional
@@ -96,7 +96,7 @@ export default function PricingTable() {
               Unmetered resources, good for big size business.
             </p>
             <a
-              href="#"
+              href="https://client.n2hosting.com/order.php?step=2&product=4&paymentTerm=1"
               className="mt:30 block f:14 f:semibold rounded t:center color:white p:12 b:2|solid|fade-30"
             >
               Buy Business
