@@ -13,11 +13,6 @@ import { StyleSheet } from '@master/css';
 export default function AppDocument() {
   return (
     <Html>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-      ></meta>
-
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
