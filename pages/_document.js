@@ -1,8 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext
+} from 'next/document';
 import ChatPlugin from '../components/ChatPlugin';
 import PrimaryFooter from '../components/Footer/Primary';
+import { render } from '@master/css/render';
+import { StyleSheet } from '@master/css';
 
-export default function Document() {
+export default function AppDocument() {
   return (
     <Html>
       <meta
@@ -32,3 +40,17 @@ export default function Document() {
     </Html>
   );
 }
+
+AppDocument.getInitialProps = async (ctx) => {
+  const { css } = render((await ctx.renderPage()).html, { StyleSheet });
+  const initialProps = await Document.getInitialProps(ctx);
+  return {
+    ...initialProps,
+    styles: (
+      <>
+        <style id="master-css">{css}</style>
+        {initialProps.styles}
+      </>
+    )
+  };
+};
