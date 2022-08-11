@@ -7,11 +7,11 @@ import MetaTags from '../components/MetaTag/MetaTags';
 
 export default function ContactUsPage() {
   const [isSuccess, setIsSuccess] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState({});
   const [errors, setErrors] = useState([]);
 
   async function handleSendFormToServer(values, token) {
-    setSuccessMessage('');
+    setSuccessMessage({});
     setIsSuccess(false);
     setErrors([]);
 
@@ -24,25 +24,24 @@ export default function ContactUsPage() {
         data: {
           ...values,
           ...{
-            ip_address: ip?.ipAddress,
-            token
+            ip_address: ip?.ipAddress
           }
         }
       };
 
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/enquiries`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        }
-      );
+      const response = await fetch(`/api/enquiries`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
 
       if (response.ok) {
-        setSuccessMessage('Form submitted! Thank You!');
+        setSuccessMessage({
+          title: 'Thank you for getting in touch! ',
+          body: 'We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!'
+        });
         setIsSuccess(true);
         values.name = '';
         values.email = '';
@@ -84,11 +83,11 @@ export default function ContactUsPage() {
           <p className="text:center mb:30 f:18 f:24@md">
             We love to hear from you.
           </p>
-
-          {successMessage && (
+          {Object.keys(successMessage).length >= 1 && (
             <>
               <div className={`p:15 mb:30 r:4 f:14 bg:green-88 color:green-40`}>
-                {successMessage}
+                <h3 className='mb:10'>{successMessage.title}</h3>
+                <p>{successMessage.body}</p>
               </div>
             </>
           )}
@@ -108,7 +107,7 @@ export default function ContactUsPage() {
           )}
 
           <ContactUsForm
-            onSubmit={(values, { setSubmitting }, recaptchaRef) => {
+            onSubmit={async (values, { setSubmitting }, recaptchaRef) => {
               const token = recaptchaRef.current.getValue();
 
               if (!token) {
@@ -121,9 +120,9 @@ export default function ContactUsPage() {
                 return;
               }
 
-              handleSendFormToServer(values, token);
+              await handleSendFormToServer(values, token);
               setSubmitting(false);
-              recaptchaRef.current.reset();
+              recaptchaRef.current?.reset();
             }}
           />
         </div>
