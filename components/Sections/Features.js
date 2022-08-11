@@ -74,22 +74,22 @@ export default function FeaturesSection() {
             <div className="overflow:hidden w:lg bg:fade-12 r:8">
               <FeaturesContent color="grass-60" tab={tab} target="tab1">
                 <picture>
-                  <img src="/images/Softwares.png" alt="" className="w:full" />
+                  <img src="//drive.google.com/uc?id=10gB1N9jzvu9osTiI0xSRromBTcynvdbl" alt="" className="w:full" />
                 </picture>
               </FeaturesContent>
               <FeaturesContent color="orange-60" tab={tab} target="tab2">
                 <picture>
-                  <img src="/images/Up-to-date.png" alt="" className="w:full" />
+                  <img src="//drive.google.com/uc?id=1Dqe4nK1U0kBGbm9KbmaK3wJAYtBcAWUD" alt="Up-to-date Tools" className="w:full" />
                 </picture>
               </FeaturesContent>
               <FeaturesContent color="grass-60" tab={tab} target="tab3">
                 <picture>
-                  <img src="/images/FREE-SSL.png" alt="" className="w:full" />
+                  <img src="//drive.google.com/uc?id=1DmI0ZRr67XdPPnZ1bbHRVYTm1r35jxd2" alt="" className="w:full" />
                 </picture>
               </FeaturesContent>
               <FeaturesContent color="orange-60" tab={tab} target="tab4">
                 <picture>
-                  <img src="/images/Security.png" alt="" className="w:full" />
+                  <img src="//drive.google.com/uc?id=12rDInCRJS5OzwjZVCty_5sYFAVueLt_3" alt="" className="w:full" />
                 </picture>
               </FeaturesContent>
             </div>
