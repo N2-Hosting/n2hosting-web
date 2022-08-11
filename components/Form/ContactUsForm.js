@@ -50,7 +50,7 @@ export default function ContactUsForm({ onSubmit }) {
             <ErrorMessage
               name="email"
               component="div"
-              className="f:14 mt:8 color:fade-80 inline-block color:red-54"
+              className="f:14 mt:8 inline-block color:red-54"
             />
           </div>
           <div>
