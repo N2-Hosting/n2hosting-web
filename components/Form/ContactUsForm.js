@@ -22,10 +22,8 @@ export default function ContactUsForm({ onSubmit }) {
       initialValues={{ name: '', email: '', message: '' }}
       validationSchema={ContactUsSchema}
       onSubmit={(values, { setSubmitting }) => {
-        const token = recaptchaRef.current.getValue();
-
         setSubmitting(true);
-        onSubmit(values, { setSubmitting }, recaptchaRef);
+        onSubmit(values, { setSubmitting }, { ...recaptchaRef });
       }}
     >
       {({ isSubmitting }) => (
@@ -34,9 +32,9 @@ export default function ContactUsForm({ onSubmit }) {
             <Field
               name="name"
               placeholder="Your Name"
-              className="bg:white p:15 appearance:none color:black r:6 w:full"
+              className="bg:fade-20 color:fade-80 p:15 appearance:none r:6 w:full outline:1|solid|fade-34 outline:pink-50:focus"
             />
-            <ErrorMessage
+            <ErrorMessage 
               name="name"
               component="div"
               className="f:14 mt:8 inline-block color:red-54"
@@ -47,12 +45,12 @@ export default function ContactUsForm({ onSubmit }) {
               type="email"
               name="email"
               placeholder="Your Email Address"
-              className="bg:white p:15 appearance:none color:black r:6 w:full"
+              className="bg:fade-20 color:fade-80 p:15 appearance:none r:6 w:full outline:1|solid|fade-34 outline:pink-50:focus"
             />
             <ErrorMessage
               name="email"
               component="div"
-              className="f:14 mt:8 inline-block color:red-54"
+              className="f:14 mt:8 color:fade-80 inline-block color:red-54"
             />
           </div>
           <div>
@@ -60,7 +58,7 @@ export default function ContactUsForm({ onSubmit }) {
               as="textarea"
               name="message"
               placeholder="Your Message"
-              className="bg:white p:15 appearance:none color:black r:6 w:full"
+              className="bg:fade-20 color:fade-80 p:15 appearance:none r:6 w:full outline:1|solid|fade-34 outline:pink-50:focus"
               rows="6"
             />
           </div>
