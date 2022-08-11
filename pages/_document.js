@@ -29,7 +29,6 @@ export default function AppDocument() {
       <body className="font:sans bg:fade-8 color:white">
         <Main />
         <PrimaryFooter />
-        <ChatPlugin />
         <NextScript />
       </body>
     </Html>

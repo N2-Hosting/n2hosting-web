@@ -86,7 +86,7 @@ export default function ContactUsPage() {
           {Object.keys(successMessage).length >= 1 && (
             <>
               <div className={`p:15 mb:30 r:4 f:14 bg:green-88 color:green-40`}>
-                <h3 className='mb:10'>{successMessage.title}</h3>
+                <h3 className="mb:10">{successMessage.title}</h3>
                 <p>{successMessage.body}</p>
               </div>
             </>

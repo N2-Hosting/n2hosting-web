@@ -34,7 +34,7 @@ export default function ContactUsForm({ onSubmit }) {
               placeholder="Your Name"
               className="bg:fade-20 color:fade-80 p:15 appearance:none r:6 w:full outline:1|solid|fade-34 outline:pink-50:focus"
             />
-            <ErrorMessage 
+            <ErrorMessage
               name="name"
               component="div"
               className="f:14 mt:8 inline-block color:red-54"
