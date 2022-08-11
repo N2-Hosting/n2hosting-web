@@ -29,9 +29,10 @@ export default function PrimaryHeader() {
         </Link>
         <picture>
           <img
-            src="/images/ph-flag-icon.png"
+            src="/images/ph-flag-icon.png?811202201"
             alt="PH flag"
             className="abs ml:15 mt:-15"
+            width={15}
           />
         </picture>
         <nav className="ml:60 hidden block@md">
