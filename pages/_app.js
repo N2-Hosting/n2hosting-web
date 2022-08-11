@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '@master/css';
 import Head from 'next/head';
+import ChatPlugin from '../components/ChatPlugin';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
       </Head>
       <Component {...pageProps} />
+      <ChatPlugin />
     </>
   );
 }
