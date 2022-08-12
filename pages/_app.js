@@ -1,4 +1,3 @@
-import '../styles/globals.css';
 import '@master/css';
 import Head from 'next/head';
 import ChatPlugin from '../components/ChatPlugin';
