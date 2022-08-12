@@ -8,7 +8,7 @@ export default function PrimaryFooter() {
           </p>
           <div className="grid-cols:3 gap:15">
             <a
-              href="https://www.facebook.com/n2hostingph"
+              href="https://www.facebook.com/n2hosting"
               target="_blank"
               rel="noreferrer"
             >
