@@ -1,6 +1,7 @@
 import '@master/css';
 import Head from 'next/head';
 import ChatPlugin from '../components/ChatPlugin';
+import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (

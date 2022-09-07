@@ -25,6 +25,23 @@ export default function AppDocument() {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
+        {/* Google tag (gtag.js)  */}
+        <script
+          async
+          src={`//www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+            `,
+          }}
+        />
       </Head>
       <body className="font:sans bg:fade-8 color:white">
         <Main />
