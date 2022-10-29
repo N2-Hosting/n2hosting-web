@@ -42,10 +42,11 @@ export default function PricingTable() {
               <PricingListItem description="1 Website" />
               <PricingListItem description="1 Database" />
               <PricingListItem description="50GB Bandwidth" />
-              <PricingListItem description="50GB Storage" />
+              <PricingListItem description="10GB Storage" />
               <PricingListItem description="FREE SSL" />
               <PricingListItem description="Free 1-click Software install" />
               <PricingListItem description="Asia Optimized Bandwidth" />
+              <PricingListItem description="1 Email Account" />
               <PricingListItem description="Free Setup" />
             </ul>
           </div>
@@ -74,13 +75,14 @@ export default function PricingTable() {
                 iconColor="white"
                 description="100GB Bandwidth"
               />
-              <PricingListItem iconColor="white" description="80GB Storage" />
+              <PricingListItem iconColor="white" description="20GB Storage" />
               <PricingListItem iconColor="white" description="FREE SSL" />
               <PricingListItem
                 iconColor="white"
                 description="Free 1-click Software install"
               />
               <PricingListItem description="Asia Optimized Bandwidth" />
+              <PricingListItem description="3 Email Accounts " />
               <PricingListItem description="Free Setup" />
             </ul>
           </div>
@@ -105,11 +107,12 @@ export default function PricingTable() {
               <PricingListItem description="UNLIMITED Website" />
               <PricingListItem description="UNLIMITED Database" />
               <PricingListItem description="UNMETERED Bandwidth" />
-              <PricingListItem description="100GB Storage" />
+              <PricingListItem description="80GB Storage" />
               <PricingListItem description="FREE SSL" />
               <PricingListItem description="Daily Backups" />
               <PricingListItem description="Free 1-click Software install" />
               <PricingListItem description="Asia Optimized Bandwidth" />
+              <PricingListItem description="UNLIMITTED Email Accounts" />
               <PricingListItem description="Free Setup" />
             </ul>
           </div>
