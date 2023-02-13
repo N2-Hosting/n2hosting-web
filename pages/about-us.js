@@ -6,7 +6,7 @@ import MetaTags from '../components/MetaTag/MetaTags';
 export default function AboutUsPage() {
   return (
     <>
-      <Head>About N2 Hosting</Head>
+      <Head>About Us - N2 Hosting</Head>
       <MetaTags
         title="About N2 Hosting - Superior Web Hosting Performance"
         description="N2 Hosting is a leading provider of web hosting solutions for businesses and individuals."
