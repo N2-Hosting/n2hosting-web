@@ -43,9 +43,9 @@ export default function AboutUsPage() {
           </p>
           <p className="mb:30 lh:1.5">
             At N2 Hosting, we believe that our success is directly tied to the
-            success of our clients. That's why we work hard every day to deliver
-            the best possible hosting experience, and why we are always here to
-            support you whenever you need it.
+            success of our clients. That&lsquo;s why we work hard every day to
+            deliver the best possible hosting experience, and why we are always
+            here to support you whenever you need it.
           </p>
         </div>
       </section>
@@ -63,10 +63,10 @@ export default function AboutUsPage() {
           </p>
           <p className="mb:30 lh:1.5">
             We believe that everyone deserves access to high-quality hosting
-            services, regardless of their experience level or budget. That's why
-            we offer a range of hosting plans that are designed to meet the
-            specific needs of our clients, and why we provide 24/7 support to
-            help you succeed.
+            services, regardless of their experience level or budget.
+            That&lsquo;s why we offer a range of hosting plans that are designed
+            to meet the specific needs of our clients, and why we provide 24/7
+            support to help you succeed.
           </p>
           <p className="mb:30 lh:1.5">
             At N2 Hosting, we are committed to delivering the best possible
