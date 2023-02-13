@@ -24,8 +24,7 @@ export default function ContactUsForm({ onSubmit }) {
       onSubmit={(values, { setSubmitting }) => {
         setSubmitting(true);
         onSubmit(values, { setSubmitting }, { ...recaptchaRef });
-      }}
-    >
+      }}>
       {({ isSubmitting }) => (
         <Form className="flex flex:col mb:20>div" noValidate>
           <div>
@@ -73,10 +72,9 @@ export default function ContactUsForm({ onSubmit }) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`block h:50 w:full rounded  p:15 color:white ${
+              className={`block h:50 w:full rounded  p:15 color:gray-90 ${
                 isSubmitting ? 'bg:blue-60' : 'bg:blue-50 bg:blue-40:hover'
-              }`}
-            >
+              }`}>
               {isSubmitting ? (
                 <LoadingIcon className="w:60 h:60 mx:auto mt:-22 mb:-22 rel left:30" />
               ) : (

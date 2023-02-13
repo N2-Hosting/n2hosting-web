@@ -5,8 +5,7 @@ export default function HeroUnitWelcome() {
     <>
       <section
         id="hero"
-        className="rel overflow:hidden bg:fade-10 h:2xs h:sm@md flex flex:col ai:center jc:center color:white t:center px:15 pt:30"
-      >
+        className="rel overflow:hidden bg:fade-10 h:2xs h:sm@md flex flex:col ai:center jc:center color:gray-74 t:center px:15 pt:30">
         <h1 className="f:36 f:72@md ml:15>span mb:30 font:bold">
           <span className="">Superior</span>
           <span className="color:blue-50">Web Hosting</span>

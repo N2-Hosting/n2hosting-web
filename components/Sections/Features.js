@@ -12,8 +12,7 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="px:15 py:30 py:80@md bg:fade-8 color:white overflow:hidden"
-    >
+      className="px:15 py:30 py:80@md bg:fade-8 color:gray-74 overflow:hidden">
       <div className="t:center mb:30 mb:120@md">
         <h2 className="f:24 f:48@md mb:30">
           <span className="color:pink-50">Everything</span> you need to run your

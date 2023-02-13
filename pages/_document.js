@@ -39,11 +39,11 @@ export default function AppDocument() {
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
-            `,
+            `
           }}
         />
       </Head>
-      <body className="font:sans bg:fade-8 color:white">
+      <body className="font:sans bg:fade-8 color:gray-74">
         <Main />
         <PrimaryFooter />
         <NextScript />

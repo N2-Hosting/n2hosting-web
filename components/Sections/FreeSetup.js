@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function FreeSetupSection() {
   return (
-    <section className="px:15 py:30 py:100@md bg:fade-8 color:white ">
+    <section className="px:15 py:30 py:100@md bg:fade-8 color:gray-74 ">
       <div className="max-w:md mx:auto grid-cols:1 gap:30 gap:15@md grid-cols:2@md ai:center t:center t:left@md">
         <div>
           <h2 className="f:24 f:48@md mb:30">
@@ -17,7 +17,7 @@ export default function FreeSetupSection() {
         </div>
         <div className="t:right@md">
           <Link href="/contact-us">
-            <a className="inline-block px:30 px:60@md py:12 py:24@md f:16 f:20@md f:bold bg:pink-50 bg:pink-30:hover color:white r:30 r:60@md">
+            <a className="inline-block px:30 px:60@md py:12 py:24@md f:16 f:20@md f:bold bg:pink-50 bg:pink-30:hover color:gray-90 r:30 r:60@md">
               Contact Us
             </a>
           </Link>
