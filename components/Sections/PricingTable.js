@@ -4,7 +4,8 @@ export default function PricingTable() {
   return (
     <section
       id="pricing"
-      className="px:15 py:30 py:80@md bg:fade-12 color:gray-74">
+      className="px:15 py:30 py:80@md bg:fade-12 color:gray-74"
+    >
       <div className="t:center mb:60 mb:120@md">
         <h2 className="f:24 f:48@md mb:30">
           <span className="color:yellow-80">Pricing</span> Plans.
@@ -33,7 +34,8 @@ export default function PricingTable() {
             </p>
             <a
               href="https://client.n2hosting.com/order.php?step=2&product=1&paymentTerm=1"
-              className="mt:30 f:14 f:semibold block rounded t:center color:gray-74 p:12 b:2|solid|fade-30">
+              className="mt:30 f:14 f:semibold block rounded t:center color:gray-74 p:12 b:2|solid|fade-30"
+            >
               Buy Starter
             </a>
             <ul className="mt:40 grid gap:12">
@@ -62,7 +64,8 @@ export default function PricingTable() {
             </p>
             <a
               href="https://client.n2hosting.com/order.php?step=2&product=2&paymentTerm=1"
-              className="mt:30 f:14 f:semibold block bg:white rounded t:center color:fade-4 p:12 b:2|solid|white">
+              className="mt:30 f:14 f:semibold block bg:white rounded t:center color:fade-4 p:12 b:2|solid|white"
+            >
               Buy Professional
             </a>
             <ul className="mt:40 grid gap:12">
@@ -96,7 +99,8 @@ export default function PricingTable() {
             </p>
             <a
               href="https://client.n2hosting.com/order.php?step=2&product=4&paymentTerm=1"
-              className="mt:30 block f:14 f:semibold rounded t:center color:gray-74 p:12 b:2|solid|fade-30">
+              className="mt:30 block f:14 f:semibold rounded t:center color:gray-74 p:12 b:2|solid|fade-30"
+            >
               Buy Business
             </a>
             <ul className="mt:40 grid gap:12">

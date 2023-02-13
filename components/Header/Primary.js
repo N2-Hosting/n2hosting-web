@@ -45,7 +45,8 @@ export default function PrimaryHeader() {
             <li>
               <Link
                 href="/?sub=features"
-                className="f:white color:blue-50:hover font:bold">
+                className="f:white color:blue-50:hover font:bold"
+              >
                 <a className="f:white color:blue-50:hover font:bold">
                   Features
                 </a>
@@ -59,14 +60,16 @@ export default function PrimaryHeader() {
             <li>
               <Link
                 href="/?sub=faq"
-                className="f:white color:blue-50:hover font:bold">
+                className="f:white color:blue-50:hover font:bold"
+              >
                 <a className="f:white color:blue-50:hover font:bold">FAQ</a>
               </Link>
             </li>
             <li>
               <Link
                 href="/about-us"
-                className="f:white color:blue-50:hover font:bold">
+                className="f:white color:blue-50:hover font:bold"
+              >
                 <a className="f:white color:blue-50:hover font:bold">
                   About Us
                 </a>
@@ -85,7 +88,8 @@ export default function PrimaryHeader() {
       <div className="flex ai:center">
         <a
           href="https://client.n2hosting.com/index.php?fuse=home&view=login"
-          className="hidden block@3xs rounded bg:blue-50 bg:blue-40:hover px:15 py:6 color:gray-90">
+          className="hidden block@3xs rounded bg:blue-50 bg:blue-40:hover px:15 py:6 color:gray-90"
+        >
           Sign In
         </a>
       </div>

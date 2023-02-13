@@ -2,7 +2,8 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="px:15 py:30 py:100@md bg:fade-12 color:gray-74">
+      className="px:15 py:30 py:100@md bg:fade-12 color:gray-74"
+    >
       <h1 className="t:center f:24 f:40@md mb:30">
         Frequently asked <span className="color:grass-60">questions</span>
       </h1>
